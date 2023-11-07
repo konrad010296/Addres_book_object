@@ -82,5 +82,4 @@ void AdresatMenedzer::ustawIdZalogowanegoUzytkownika(int id)
 void AdresatMenedzer::wyczyscVektor()
 {
     adresaci.clear();
-    plikZAdresatami.wyczyscVektor();
 }
