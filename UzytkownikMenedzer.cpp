@@ -2,12 +2,9 @@
 
 void UzytkownikMenedzer::rejestracjaUzytkownika()
 {
-
     Uzytkownik uzytkownik = podajDaneNowegoUzytkownika();
-
     uzytkownicy.push_back(uzytkownik);
     plikZUzytkownikami.dopiszUzytkownikaDoPliku(uzytkownik);
-
     cout << endl << "Konto zalozono pomyslnie" << endl << endl;
     system("pause");
 }
@@ -18,7 +15,6 @@ Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
     Uzytkownik uzytkownik;
     string login;
     string haslo;
-
     uzytkownik.ustawId(pobierzIdNowegoUzytkownika());
     do
     {
@@ -27,11 +23,9 @@ Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
         uzytkownik.ustawLogin(login);
     }
     while (czyIstniejeLogin(uzytkownik.pobierzLogin()) == true);
-
     cout << "Podaj haslo: ";
     cin >> haslo;
     uzytkownik.ustawHaslo(haslo);
-
     return uzytkownik;
 }
 
@@ -59,7 +53,6 @@ bool UzytkownikMenedzer::czyIstniejeLogin(string login)
 void UzytkownikMenedzer::wypiszWszystkichUzytkownikow()
 {
     vector <Uzytkownik> :: iterator it;
-
     for(it = uzytkownicy.begin() ;  it != uzytkownicy.end() ; ++it)
     {
         cout << (*it).pobierzId() << endl;
@@ -69,20 +62,17 @@ void UzytkownikMenedzer::wypiszWszystkichUzytkownikow()
 }
 void UzytkownikMenedzer::wczytajUzytkownikowZPliku()
 {
-
     uzytkownicy = plikZUzytkownikami.wczytajUzytkownikowZPliku();
-
 }
 
 int UzytkownikMenedzer::logowanieUzytkownika()
 {
     Uzytkownik uzytkownik;
     string login = "", haslo = "";
-
     cout << endl << "Podaj login: ";
     login = FunkcjePomocnicze::wczytajLinie();
-
     vector <Uzytkownik>::iterator itr = uzytkownicy.begin();
+
     while (itr != uzytkownicy.end())
     {
         if (itr -> pobierzLogin() == login)

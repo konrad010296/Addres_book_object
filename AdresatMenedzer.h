@@ -16,11 +16,10 @@ class AdresatMenedzer
     Adresat podajDaneNowegoAdresata();
 
 public:
-    AdresatMenedzer()
+    AdresatMenedzer(string nazwaPlikuAdresaci) : plikZAdresatami(nazwaPlikuAdresaci)
     {
         idZalogowanegoUzytkownika = 0;
     };
-    ~AdresatMenedzer() {};
     void dodajAdresata();
     void wyswietlWszystkichAdresatow();
     void wyswietlDaneAdresata(Adresat adresat);

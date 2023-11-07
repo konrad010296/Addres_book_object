@@ -2,22 +2,17 @@
 
 void KsiazkaAdresowa::rejestracjaUzytkownika()
 {
-
     uzytkownikMenedzer.rejestracjaUzytkownika();
-
 }
 
 void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 {
-
     uzytkownikMenedzer.wypiszWszystkichUzytkownikow();
 }
 
 void KsiazkaAdresowa::logowanieUzytkownika()
 {
-
     uzytkownikMenedzer.logowanieUzytkownika();
-
     if(pobierzIdZalogowanegoUzytkownika() != 0)
     {
         adresatMenedzer.ustawIdZalogowanegoUzytkownika(pobierzIdZalogowanegoUzytkownika());
@@ -27,9 +22,7 @@ void KsiazkaAdresowa::logowanieUzytkownika()
 char KsiazkaAdresowa::wybierzOpcjeZMenuGlownego()
 {
     char wybor;
-
     system("cls");
-
     cout << "    >>> MENU  GLOWNE <<<" << endl;
     cout << "---------------------------" << endl;
     cout << "1. Rejestracja" << endl;
@@ -38,7 +31,6 @@ char KsiazkaAdresowa::wybierzOpcjeZMenuGlownego()
     cout << "---------------------------" << endl;
     cout << "Twoj wybor: ";
     wybor = FunkcjePomocnicze::wczytajZnak();
-
     return wybor;
 }
 
