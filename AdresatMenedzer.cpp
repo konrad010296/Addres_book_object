@@ -17,7 +17,7 @@ Adresat AdresatMenedzer::podajDaneNowegoAdresata()
     Adresat adresat;
 
     adresat.ustawId(plikZAdresatami.pobierzIdOstatniegoAdresata() + 1);
-    adresat.ustawIdUzytkownika(idZalogowanegoUzytkownika);
+    adresat.ustawIdUzytkownika(ID_ZALOGOWANEGO_UZYTKOWNIKA);
 
     cout << "Podaj imie: ";
     adresat.ustawImie(FunkcjePomocnicze::wczytajLinie());
@@ -38,12 +38,6 @@ Adresat AdresatMenedzer::podajDaneNowegoAdresata()
 
     return adresat;
 }
-
-void AdresatMenedzer::wczytajAdresatowZalogowanegoUzytkownikaZPliku()
-{
-    adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idZalogowanegoUzytkownika);
-}
-
 void AdresatMenedzer::wyswietlWszystkichAdresatow()
 {
     system("cls");
@@ -72,14 +66,4 @@ void AdresatMenedzer::wyswietlDaneAdresata(Adresat adresat)
     cout << "Numer telefonu:     " << adresat.pobierzNumerTelefonu() << endl;
     cout << "Email:              " << adresat.pobierzEmail() << endl;
     cout << "Adres:              " << adresat.pobierzAdres() << endl;
-}
-
-void AdresatMenedzer::ustawIdZalogowanegoUzytkownika(int id)
-{
-    idZalogowanegoUzytkownika = id;
-}
-
-void AdresatMenedzer::wyczyscVektor()
-{
-    adresaci.clear();
 }
