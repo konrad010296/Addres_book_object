@@ -80,12 +80,12 @@ void KsiazkaAdresowa::wyloguj()
 
 void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
 {
-    adresatMenedzer->wyswietlWszystkichAdresatow();
+    adresatMenedzer -> wyswietlWszystkichAdresatow();
 }
 
 void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
 {
-    adresatMenedzer->wyszukajAdresatowPoImieniu();
+    adresatMenedzer -> wyszukajAdresatowPoImieniu();
 }
 
 void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
@@ -96,4 +96,9 @@ void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
 void KsiazkaAdresowa::edytujAdresata()
 {
     adresatMenedzer -> edytujAdresata();
+}
+
+void KsiazkaAdresowa::usunAdresata()
+{
+    adresatMenedzer -> usunAdresata();
 }

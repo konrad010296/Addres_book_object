@@ -43,6 +43,7 @@ int main()
                 ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
             case '5':
+                ksiazkaAdresowa.usunAdresata();
                 break;
             case '6':
                 ksiazkaAdresowa.edytujAdresata();

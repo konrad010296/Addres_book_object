@@ -33,7 +33,8 @@ public:
     void wyswietlWszystkichAdresatow();
     void wyszukajAdresatowPoImieniu();
     void wyszukajAdresatowPoNazwisku();
-    void edytujAdresata() ;
+    void edytujAdresata();
+    void usunAdresata();
 };
 
 #endif
