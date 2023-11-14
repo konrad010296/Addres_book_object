@@ -26,6 +26,7 @@ public:
     void wyszukajAdresatowPoImieniu();
  //   void wyswietlDaneAdresata(Adresat adresat);
     void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
+    void wyszukajAdresatowPoNazwisku();
 };
 
 #endif
