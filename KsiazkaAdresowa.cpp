@@ -82,3 +82,9 @@ void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
 {
     adresatMenedzer->wyswietlWszystkichAdresatow();
 }
+
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
+{
+    adresatMenedzer->wyszukajAdresatowPoImieniu();
+}
+
