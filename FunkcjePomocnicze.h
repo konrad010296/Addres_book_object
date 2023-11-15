@@ -16,7 +16,6 @@ public:
     static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
     static string pobierzLiczbe(string tekst, int pozycjaZnaku);
     static int konwersjaStringNaInt(string liczba);
-    static bool czyPlikJestPusty(fstream &plikTekstowy);
     static int wczytajLiczbeCalkowita();
 };
 
