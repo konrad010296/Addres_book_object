@@ -9,7 +9,6 @@ void UzytkownikMenedzer::rejestracjaUzytkownika()
     system("pause");
 }
 
-
 Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
 {
     Uzytkownik uzytkownik;
